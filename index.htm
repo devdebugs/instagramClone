@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
+     <title>Document</title>
+     <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+     <!-- Navigation menus Start -->
+     <div class="navigation">
+          <div class="logo">
+            <a class="no-underline" href="#">
+               <img src="./images/logo.png" alt="Insta LOGO" class="logo_img">
+            </a>
+          </div>
+          <div class="navigation-search-container">
+            <i class="fa fa-search"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <input class="search-field" type="text" placeholder="Search">
+            <div class="search-container">
+              <div class="search-container-box">
+                <div class="search-results">
+                     <!-- Search Result shows here -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-navigation">
+               <div class="user-nav_icons">
+
+                    <svg aria-label="Home" class="user_icon" fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                         <path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z">
+                         </path>
+                    </svg>
+
+                    <svg aria-label="Messenger" class="user_icon" fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                         <path d="M36.2 16.7L29 22.2c-.5.4-1.2.4-1.7 0l-5.4-4c-1.6-1.2-3.9-.8-5 .9l-6.8 10.7c-.7 1 .6 2.2 1.6 1.5l7.3-5.5c.5-.4 1.2-.4 1.7 0l5.4 4c1.6 1.2 3.9.8 5-.9l6.8-10.7c.6-1.1-.7-2.2-1.7-1.5zM24 1C11 1 1 10.5 1 23.3 1 30 3.7 35.8 8.2 39.8c.4.3.6.8.6 1.3l.2 4.1c0 1 .9 1.8 1.8 1.8.2 0 .5 0 .7-.2l4.6-2c.2-.1.5-.2.7-.2.2 0 .3 0 .5.1 2.1.6 4.3.9 6.7.9 13 0 23-9.5 23-22.3S37 1 24 1zm0 41.6c-2 0-4-.3-5.9-.8-.4-.1-.8-.2-1.3-.2-.7 0-1.3.1-2 .4l-3 1.3V41c0-1.3-.6-2.5-1.6-3.4C6.2 34 4 28.9 4 23.3 4 12.3 12.6 4 24 4s20 8.3 20 19.3-8.6 19.3-20 19.3z">
+                         </path>
+                    </svg>
+
+                    <a href="/explore/" tabindex="0">
+                         <svg aria-label="Find People" class="user_icon" fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                              <path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd">
+                    </path>
+               </svg>
+           </a>
+
+           <!-- Account Acitivity Icon -->
+           <a class="_0ZPOP kIKUG " href="/accounts/activity/">
+               <svg aria-label="Activity Feed" class="user_icon" fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                    <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+
+                    </path>
+               </svg>
+          </a>
+        </div>
+
+
+        <!-- User Avatar -->
+        <div class="user_avatar">
+             <img src="./images/Avatar-user.jpg" alt="User Profile Photo" class="user_photo">
+        </div>
+      </div>
+     </div>
+        
+     <!-- Navigation menus End  -->
+
+          <!-- layout Start -->
+          <div class="container">
+               <div class="instaContent">
+                    <div class="instaTopConent">
+                         <!-- Story Content -->
+                         <div class="instaStoyContent">
+                              <figcaption class="userStory">
+                                   <img src="./images/Avatar-user.jpg" alt="Story Image" class="userStoryImage">
+                                   <h3 class="username">Anjanavakil</h3>
+                              </figcaption>
+                         </div>
+
+                         
+                         <!-- Main Post Content -->
+                         
+                         <div class="mainContent" style="margin-bottom: 2rem;">
+                              <div class="header_post">
+                                   <div class="header_nav">
+                                        <img src="./images/Avatar-user.jpg" alt="user image" class="user_img">
+                                        <h3 class="username">Anjanavakil</h3>
+                                   </div>
+                                   <div class="header_action_nav">
+                                        <svg aria-label="More options" class="Menu" fill="#262626" height="16" viewBox="0 0 48 48" width="16"><circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle></svg>
+                                   </div>
+                              </div>
+                              <div class="header_post-image">
+                                   <img src="./images/post_image.jpg" alt="post image">
+                              </div>
+                              <div class="header_post-action">
+                                   <div class="action-navs">
+                                        <svg aria-label="Like" class="like_heart" fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                                        <svg aria-label="Comment" class="MessageChat" fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
+
+                                        <svg aria-label="Share Post" class="SharePost" fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
+                                   </div>
+                                   <div class="action-save_menu">
+                                        <svg aria-label="Save" class="SavePost" fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
+                                   </div>
+                              </div>
+                              <div class="header_post-link">
+                                   <span class="post_likes">5,050 likes</span>
+                              </div>
+                              <div class="header_post_text">
+                                   <p><span class="user"><a href="#user" class="user_link">Anjanavakil</a></span> Veo que acabo de llegar a los 200 millones de personas que me siguen en esta red, sin embargo, por lo que está pasando... <span class="more">more</span></p>
+                              </div>
+                              <div class="header_post_viewComments">
+                                   <a href="#comments"class="comment_text">
+                                        View all
+                                        <span class="comment_count">23,000</span>
+                                        Comments
+                                   </a>
+                                   
+                              </div>
+                              <div class="header_post_userTag">
+                                   <div class="userTagAction">
+                                      <a href="#user" class="username">leomessi</a>
+                                       <a href="#"><svg aria-label="Like" class="like" fill="#262626" height="12" viewBox="0 0 48 48" width="12"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                                       </a> 
+                                   </div>
+                                   <div class="userTagAction">
+                                        <a href="#user" class="username">emilywilliams 👍🏼👍🏼👍🏼👍🏼</a>
+                                         <a href="#"><svg aria-label="Like" class="like" fill="#262626" height="12" viewBox="0 0 48 48" width="12"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                                         </a> 
+                                     </div>
+                              </div>
+                              <div class="post_time">
+                                   <div id="post_time">3  Hours  AGO</div>
+                              </div>
+                              <div class="post_action_form">
+                                   <div class="post_form_navs">
+                                        <svg aria-label="Emoji" class="emoji" fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path></svg>
+                                        <form action="#" class="commentInput">
+                                             <input type="text" name="comment" id="comment" placeholder="Add a comment...">
+                                        </form>
+                                        <button class="postBtn">Post</button>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Main Post Content End -->
+
+                         <!-- News Feed Start -->
+
+                         <div class="newsFeed_suggestions" style="margin-bottom: 2rem;">
+                              <div class="newsFeedHeader">
+                                   <h3 class="suggestions">Suggestions for you</h3>
+                                   <a href="#" class="seeAll">See All</a>
+                              </div>
+                              <div class="carousel">
+                                   <div class="nav nav-left">
+                                     <div class="ion-chevron-left carousel-arrow-icon-left"></div>
+                                   </div>
+                             
+                                     <div class="carousel-content">
+                                       
+                                       <div class="slide slide-1">
+                                         <div class="box box-carasoul">
+                                              <div class="remove">
+                                                 <i class="ion-ios-close-empty icon-small icon-remove"></i>
+                                              </div>
+                                              <img src="./images/Avatar-user.jpg" alt="img" class="img">
+                                              <h3 class="name">Nick Smith</h3>
+                                              <span class="text">Suggested for you</span>
+                                              <button class="follow">Follow</button>
+                                         </div>
+                                       </div>
+                                       <div class="slide slide-2">
+                                        <div class="box box-carasoul">
+                                             <div class="remove">
+                                                <i class="ion-ios-close-empty icon-small icon-remove"></i>
+                                             </div>
+                                             <img src="./images/Avatar-user.jpg" alt="img" class="img">
+                                             <h3 class="name">Nick Smith</h3>
+                                             <span class="text">Suggested for you</span>
+                                             <button class="follow">Follow</button>
+                                        </div>
+                                      </div>
+
+                                      <div class="slide slide-3">
+                                        <div class="box box-carasoul">
+                                             <div class="remove">
+                                                <i class="ion-ios-close-empty icon-small icon-remove"></i>
+                                             </div>
+                                             <img src="./images/Avatar-user.jpg" alt="img" class="img">
+                                             <h3 class="name">Nick Smith</h3>
+                                             <span class="text">Suggested for you</span>
+                                             <button class="follow">Follow</button>
+                                        </div>
+                                      </div>
+
+                                      
+                                   
+                                     </div>
+                             
+                                   <div class="nav nav-right">
+                                     <div class="ion-chevron-right carousel-arrow-icon-right"></div>
+                                   </div>
+                                 </div>
+                         </div>
+
+                         <!-- News Feed End -->
+                         <div class="mainContent" style="margin-bottom: 2rem;">
+                              <div class="header_post">
+                                   <div class="header_nav">
+                                        <img src="./images/post_image.jpg" alt="user image" class="user_img">
+                                        <h3 class="username">Anjanavakil</h3>
+                                   </div>
+                                   <div class="header_action_nav">
+                                        <svg aria-label="More options" class="Menu" fill="#262626" height="16" viewBox="0 0 48 48" width="16"><circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle></svg>
+                                   </div>
+                              </div>
+                              <div class="header_post-image">
+                                   <img src="./images/jane.jpg" alt="post image">
+                              </div>
+                              <div class="header_post-action">
+                                   <div class="action-navs">
+                                        <svg aria-label="Like" class="like_heart" fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                                        <svg aria-label="Comment" class="MessageChat" fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
+
+                                        <svg aria-label="Share Post" class="SharePost" fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
+                                   </div>
+                                   <div class="action-save_menu">
+                                        <svg aria-label="Save" class="SavePost" fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
+                                   </div>
+                              </div>
+                              <div class="header_post-link">
+                                   <span class="post_likes">5,050 likes</span>
+                              </div>
+                              <div class="header_post_text">
+                                   <p><span class="user"><a href="#user" class="user_link">Anjanavakil</a></span> Veo que acabo de llegar a los 200 millones de personas que me siguen en esta red, sin embargo, por lo que está pasando... <span class="more">more</span></p>
+                              </div>
+                              <div class="header_post_viewComments">
+                                   <a href="#comments"class="comment_text">
+                                        View all
+                                        <span class="comment_count">23,000</span>
+                                        Comments
+                                   </a>
+                                   
+                              </div>
+                              <div class="header_post_userTag">
+                                   <div class="userTagAction">
+                                      <a href="#user" class="username">leomessi</a>
+                                       <a href="#"><svg aria-label="Like" class="like" fill="#262626" height="12" viewBox="0 0 48 48" width="12"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                                       </a> 
+                                   </div>
+                                   <div class="userTagAction">
+                                        <a href="#user" class="username">emilywilliams 👍🏼👍🏼👍🏼👍🏼</a>
+                                         <a href="#"><svg aria-label="Like" class="like" fill="#262626" height="12" viewBox="0 0 48 48" width="12"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                                         </a> 
+                                     </div>
+                              </div>
+                              <div class="post_time">
+                                   <div id="post_time">3  Hours  AGO</div>
+                              </div>
+                              <div class="post_action_form">
+                                   <div class="post_form_navs">
+                                        <svg aria-label="Emoji" class="emoji" fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path></svg>
+                                        <form action="#" class="commentInput">
+                                             <input type="text" name="comment" id="comment" placeholder="Add a comment...">
+                                        </form>
+                                        <button class="postBtn">Post</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+
+                    
+
+                    <!-- Sidebar content  Start -->
+                    <div class="instaContent_sidebar">
+
+                         
+                         <div class="user_info">
+                              <div class="user_Avatar">
+                                   <img src="./images/Avatar-user.jpg" alt="Avatart" class="userAvatar">
+                                   <div class="userAccountInfo">
+                                        <a href="#username" class="username">anjanavakil</a>
+                                        <span class="userText">Anjava</span>
+                                   </div>
+                              </div>
+
+                              <div class="userSwitchAccount">
+                                   <a href="#switch" class="switchAccount">Switch</a>
+                              </div>
+
+                         </div>
+                         <div class="user_sugguestion">
+                              <div class="suggestionText">
+                                   Suggestions For You
+                              </div>
+                              <a href="#" class="viewAll">See All</a>
+                         </div>
+                         <div class="otherUsers">
+                              <div class="user_Avatar">
+                                   <img src="./images/post_image.jpg" alt="Avatart" class="userAvatar">
+                                   <div class="userAccountInfo">
+                                        <a href="#username" class="username">
+                                             abrar_abbasi_official</a>
+                                        <span class="userText">Suggested for you</span>
+                                   </div>
+                              </div>
+
+                              <div class="userSwitchAccount">
+                                   <a href="#switch" class="switchAccount">Follow</a>
+                              </div>
+                         </div>
+
+                         <div class="otherUsers">
+                              <div class="user_Avatar">
+                                   <img src="./images/post_image.jpg" alt="Avatart" class="userAvatar">
+                                   <div class="userAccountInfo">
+                                        <a href="#username" class="username">john_dennis_338</a>
+                                        <span class="userText">Suggested for you</span>
+                                   </div>
+                              </div>
+
+                              <div class="userSwitchAccount">
+                                   <a href="#switch" class="switchAccount">Follow</a>
+                              </div>
+                         </div>
+
+                         <div class="otherUsers">
+                              <div class="user_Avatar">
+                                   <img src="./images/post_image.jpg" alt="Avatart" class="userAvatar">
+                                   <div class="userAccountInfo">
+                                        <a href="#username" class="username">claramaties</a>
+                                        <span class="userText">Suggested for you</span>
+                                   </div>
+                              </div>
+
+                              <div class="userSwitchAccount">
+                                   <a href="#switch" class="switchAccount">Follow</a>
+                              </div>
+                         </div>
+                         <div class="otherUsers">
+                              <div class="user_Avatar">
+                                   <img src="./images/post_image.jpg" alt="Avatart" class="userAvatar">
+                                   <div class="userAccountInfo">
+                                        <a href="#username" class="username">emilywilliams</a>
+                                        <span class="userText">Suggested for you</span>
+                                   </div>
+                              </div>
+
+                              <div class="userSwitchAccount">
+                                   <a href="#switch" class="switchAccount">Follow</a>
+                              </div>
+                         </div>
+                         
+                         <div class="instaMenus">
+                              <ul class="listItem">
+                                   <li><a href="#" class="link">Home</a></li>
+                                   <li><a href="" class="link">Help</a></li>
+                                   <li><a href="" class="link">Press</a></li>
+                                   <li><a href="" class="link">API</a></li>
+                                   <li><a href="" class="link">Jobs</a></li>
+                                   <li><a href="" class="link">Privacy</a></li>
+                                   <li><a href="" class="link">Term</a></li>
+                                   <li><a href="" class="link">Locations</a></li>
+                                   <li><a href="" class="link">Top Accounts</a></li>
+                                   <li><a href="" class="link">Hashtags</a></li>
+                                   <li><a href="" class="link">Language</a></li>
+                              </ul>
+                         </div>
+                         <div class="instaCopyRight">© 2021 INSTAGRAM FROM FACEBOOK
+                         </div>
+                    </div>
+
+                    <!-- Sidebar Content End -->
+               </div>
+               
+          </div>
+          <script src="./js/app.js"></script>
+</body>
+</html>

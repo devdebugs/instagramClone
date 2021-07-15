@@ -1,0 +1,737 @@
+@import url('http://fonts.cdnfonts.com/css/billabong');
+
+
+:root{
+     --color-primary: #fafafa;
+     --color-primary-light: #ffffff;
+}
+*{
+     margin: 0;
+     padding: 0;
+}
+
+*,*::before,*::after{
+     box-sizing: inherit;
+}
+
+html{
+     box-sizing: border-box;
+     font-size: 62.5%;
+}
+
+body{
+     background-color: var(--color-primary);
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-weight: 400;
+     line-height: 1.7;
+     text-rendering: optimizeLegibility;
+}
+
+
+.trendingTitle{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+
+/* Navigation Menus Setup */
+
+.navigation {
+     background-color: #ffffff;
+     height: 5.4rem;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     left: 0;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding: 0px 50px;
+     box-sizing: border-box;
+     z-index: 2;
+     /* animation magic */
+     transition: all 0.4s ease-in-out;
+     -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+   }
+   
+   .shrink {
+     height: 50px;
+   }
+   
+   .navigation .logo a {
+     position: relative;
+   }
+
+   /* LOGO  */
+   .logo_img{
+        height: 3rem;
+        margin-top: 1rem;
+        display: flex;
+        margin-left: 3rem;
+   }
+   
+   .navigation-search-container {
+     position: relative;
+   }
+   
+   .navigation-search-container input {
+     background-color: #fafafa;
+     padding: 3px 20px;
+     padding-left: 25px;
+     height: 30px;
+     box-sizing: border-box;
+     border: 1px solid rgba(0, 0, 0, 0.0975);
+     border-radius: 3px;
+     font-size: 14px;
+     text-align: center;
+   }
+   
+   .navigation-search-container .fa-search {
+     position: absolute;
+     top: 10px;
+     left: 71px;
+     font-size: 11px;
+     color: rgba(0, 0, 0, 0.5);
+
+   }
+
+   /* Remove ICON */
+   .navigation-search-container .fa-times{
+        position: absolute;
+        top: 8px;
+        right: 1rem;
+        background-color:#D1D1D1;
+        color: var(--color-primary);
+        width: 1.5rem;
+        height: 1.5rem;
+        color: #fff;
+        border-radius: 5rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+   }
+ .navigation-search-container .search-field:focus{
+      outline: none;
+ }
+.navigation-search-container .search-field:focus + .fa-times{
+     display: block;
+     text-align: left;
+}
+
+   /* User Navigation */
+   .user-navigation{
+        display: flex;
+        align-items: center;
+        margin: 0 3rem;
+   }
+
+
+   /* User ICONS */
+   .user_icon {
+        margin: 0 1rem;
+   }
+   /* ************* User Avatar */
+   .user_photo{
+        height: 2.3rem;
+        width: 2.3rem;
+        border-radius: 5rem;
+        margin-left: 1rem;
+   }
+
+/* Icons Setup */
+.user-nav_icon .icon{
+     font-size: 2rem;
+}
+
+
+
+
+/* ######################
+########## Buidling Layout */
+.container{
+     max-width:70%;
+     margin: 80px auto;
+     position: relative;
+}
+
+
+.instaContent{
+     display: flex;
+     justify-content: space-between;
+}
+
+
+.instaTopConent{
+     flex: 1;
+     flex-direction: column;
+     margin: 1rem 0;
+}
+
+
+.instaStoyContent{
+     width: 70%;
+     background-color: var(--color-primary-light);
+     padding:2rem 1rem;
+     display: flex;
+     flex-direction: row;
+     border: 1px solid #dbdbdb;
+     border-radius: 3px;
+     margin-bottom: 2rem;
+}
+
+.userStoryImage{
+     height: 6rem;
+     border-radius: 5rem;
+     border: 1px solid rgb(189, 21, 21);
+     padding: .3rem;
+}
+
+.userStory{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0 1rem;
+}
+
+.username{
+     font-weight: normal;
+     font-size: 1.2rem;
+}
+
+
+
+.mainContent{
+     border: 1px solid #dbdbdb;
+     border-radius: 3px;
+     width: 70%;
+}
+
+/* POST Section */
+.header_post{
+     width: 100%;
+     height: 3rem;
+     background-color: var(--color-primary-light);
+     padding: 3rem 1rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+
+}
+
+.header_nav{
+     display: flex;
+     align-items: center;
+}
+
+.header_nav .username{
+     font-size: 1.2rem;
+     font-weight: bold;
+     margin-left: 1rem;
+     color: #262626;
+}
+
+.user_img{
+     height: 4rem;
+     border-radius: 5rem;
+     border: 1px solid rgb(189, 21, 21);
+     padding: .3rem;
+}
+
+
+.header_post-image img{
+
+     height: 100%;
+     width: 100%;
+}
+
+
+.header_post-action{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: var(--color-primary-light);
+     padding: 1rem 1.6rem;
+}
+
+.action-navs svg{
+     margin: 0 10px;
+}
+
+.header_post-link{
+     background-color: var(--color-primary-light);
+     margin-top: -1.5rem;
+}
+.post_likes{
+     margin-left: 2rem;
+     font-weight: 600;
+     color: #262626;
+     font-size: 1.6rem;
+    
+}
+
+.header_post_text{
+     background-color: var(--color-primary-light);
+     margin-left: 2rem;
+}
+.header_post_text p{
+     font-size: 1.4rem;
+}
+.header_post_text .user{
+     font-weight: 600;
+     font-size: 1.5rem;
+}
+
+.header_post_text .more{color: #8e8e8e;}
+
+.header_post_text .user_link{
+     text-decoration: none;
+     color: #262626;
+}
+
+.header_post_viewComments{
+     background-color: var(--color-primary-light);
+     margin-left: 2rem;
+}
+
+.comment_text{
+     color: #8e8e8e;
+     font-size: 1.4rem;
+     text-decoration: none;
+}
+
+.header_post_userTag{
+     background-color: var(--color-primary-light);
+     margin-left: 2rem;
+}
+
+.userTagAction{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.userTagAction .username{
+     font-weight: 600;
+     font-size: 1.5rem;
+     text-decoration: none;
+     color: #262626;
+}
+
+
+svg.like{
+     margin-right: 1rem;
+     height: 1.2rem;
+     width: 1.2rem;
+}
+
+.post_time{
+     margin-left: 2rem;
+     background-color: var(--color-primary-light);
+     margin-bottom: 1rem;
+}
+
+#post_time{
+     color: #8e8e8e;
+     text-transform: uppercase;
+}
+
+.post_action_form{
+     background-color: var(--color-primary-light);
+     padding-left: 1.6rem;
+     padding-right: 1.6rem;
+     border-top: 1px solid #dbdbdb;
+}
+
+.post_action_form .postBtn{
+     background-color: transparent;
+     color: #0095f6;
+     outline: none;
+     border: none;
+     font-size: 1.4rem;
+     font-weight: 600;
+     cursor: pointer;
+}
+
+
+.post_form_navs{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.commentInput{
+     flex: 0 0 90%;
+     width: 100%;
+}
+
+.commentInput input{
+     width: 100%;
+     padding: 1.7rem;
+     border: none;
+     font-size: 1.4rem;
+}
+
+.commentInput input:focus{
+     outline: none;
+}
+
+
+.instaContent_sidebar{
+     
+     margin-left: 10rem;
+     flex: 0 0 35%;
+     min-height: 100vh;
+     position: fixed;
+     right: 0;
+     width: 43rem;
+
+}
+
+
+.user_info{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 3rem;
+}
+
+
+.user_Avatar{
+     display: flex;
+     align-items: center;
+}
+
+.user_Avatar img{
+     height: 5rem;
+     border-radius: 5rem;
+}
+
+
+.userAccountInfo{
+     display: flex;
+     flex-direction: column;
+     margin-left: 1rem;
+}
+
+
+.userAccountInfo .username{
+     text-decoration: none;
+     color: #262626;
+     font-weight: 600;
+     font-size: 1.4rem;
+}
+
+.userAccountInfo .userText{
+     color: #8e8e8e;
+     font-size: 1.2rem;
+     margin-top: -0.3rem;
+}
+
+.userSwitchAccount{
+     margin-right: 16rem;
+}
+
+
+.switchAccount{
+     text-decoration: none;
+     color: #0095f6;
+     font-weight: 600;
+     font-size: 1.4rem;
+}
+
+.suggestionText{
+     font-weight: 600;
+     font-size: 1.4rem;
+     color: #8e8e8e;
+}
+
+.user_sugguestion{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 1.5rem;
+     margin-bottom: 1rem;
+}
+
+.user_sugguestion .viewAll{
+     margin-right: 16rem;
+     text-decoration: none;
+     font-weight: 600;
+     color: #262626;
+     font-size: 1.4rem;
+}
+
+
+.otherUsers{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+.otherUsers .user_Avatar img{
+     height: 3rem;
+}
+
+
+.instaMenus{
+     margin-top: 2rem;
+     width: 30rem;
+     margin-bottom: 3rem;
+}
+
+.listItem li{
+     display: inline-block;
+     margin: 0 .2rem;
+}
+
+.listItem li a{
+     text-decoration: none;
+     color: #8e8e8e;
+}
+
+.instaCopyRight{
+     color: #8e8e8e;
+     font-size: 1.1rem;
+}
+
+
+
+
+
+/* NewsFeeds */
+.newsFeed_suggestions{
+     width: 70%;
+     margin-top: 2rem;
+     border: 1px solid #dbdbdb;
+     border-radius: 3px;
+     padding: 3rem;
+     background-color: var(--color-primary-light);
+}
+
+
+.newsFeedHeader{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 1.5rem;
+     color: #8e8e8e;
+     font-size: 1.2rem;
+     
+}
+
+.newsFeed_suggestions .seeAll{
+     text-decoration: none;
+     color: #0095f6;
+     font-weight: 600;
+     font-size: 1.4rem;
+}
+
+
+
+
+
+
+/* Carasoult NewsFeed */
+
+.carousel {
+     position: relative;
+     width:100%;
+     height: 20rem; 
+     margin: 0 auto;
+   }
+   
+   .carousel-content {
+     position: relative;
+     overflow: hidden;
+     transition: width .4s;
+     height: 100%;
+   }
+   
+   .slide {
+     height: 100%;
+     background-color: var(--color-primary-light);
+     position: absolute;
+     z-index: 1;
+     transition: left .4s cubic-bezier(.47,.13,.15,.89);
+   }
+   
+   .slide-2 {
+     height: 100%;
+     background-color: var(--color-primary-light);
+   }
+   
+   .slide-3 {
+     height: 100%;
+     background-color: var(--color-primary-light);
+   }
+   
+   .slide-4 {
+     height: 100%;
+     background-color: var(--color-primary-light);
+   }
+   
+   .slide-5 {
+     height: 100%;
+     background-color: var(--color-primary-light);
+   }
+
+
+
+
+
+   
+   .nav {
+     position: absolute;
+     top: 50%;
+     margin-top: -10px;
+     background-color: rgba(70, 70, 70, 0.699);
+     width: 20px;
+     height: 20px;
+     z-index: 2;
+     cursor: pointer;
+     border-radius: 50%;
+     border: none;
+     outline: none;
+     color: white;
+     -webkit-user-select: none;
+   }
+   
+   .nav-left {
+     top: 8rem;
+     left: 0;
+   }
+   
+   .nav-right {
+     top: 8rem;
+     right: 0;
+   }
+   
+   .carousel-arrow-icon-left {
+     margin-left: 5px;
+     margin-top: 2px;
+   }
+   
+   .carousel-arrow-icon-right {
+     margin-left: 7px;
+     margin-top: 2px;
+   }
+
+
+
+
+   .box{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+        position: relative;
+   }
+
+   .remove{
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        font-size: 1.7rem;
+        color: white;
+        top:0.2rem;
+        right: 1.2rem;
+       color: #262626;
+   }
+
+   .icon-remove{
+        font-size: 2.5rem;
+   }
+
+   .box img{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 5rem;
+   }
+
+   .box .name{
+        font-size: 1.4rem;
+        color: #262626;
+        font-weight: 600;
+   }
+
+   .box .text{
+        color: #8e8e8e;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+   }
+
+   .box .follow{
+        padding: 0.6rem 4rem;
+        background-color: #0095f6;
+        color: #fff;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        font-weight: 600;
+   }
+
+
+
+
+
+   /* Media Break Points */
+  
+
+/* .instaContent_Overview{
+     flex: 0 0 70%;
+     background-color: gray;
+     height: 70rem;
+} */
+
+
+/* ############## Building Story Section */
+/* .instaContent_Overview{
+     width: 100%;
+     background-color: var(--color-primary-light);
+     height: 12rem;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     padding: 4rem 1rem;
+     border: 1px solid #dbdbdb;
+     border-radius: 3px;
+} */
+
+
+/* .storyImg{
+     height: 5rem;
+     border-radius: 5rem;
+     border: 1px solid rgb(167, 11, 11);
+     padding: .3rem;
+} */
+
+/* .storyUser .userName{
+     font-size: 1.2rem;
+     font-weight: normal;
+     margin-top: -0.6rem;
+}
+
+
+.instaContent_sidebar{
+     flex: 0 0 40%;
+     background-color: var(--color-primary);
+     height: 100vh;
+     position: fixed;
+     top: 7.8rem;
+     right: 18rem;
+     width: 20rem;
+     overflow: hidden;
+} 
